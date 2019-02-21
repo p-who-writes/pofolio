@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        
+        <!-- Custom fonts for this template -->
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="style.css">
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+        <style>
+            #Path1 {
+          cursor: pointer;
+                    }
+
+        
+          #CombinedShape {
+          cursor: pointer;
+          fill: #B3B3B3;
+          }
+
+          
+          #Path2 {
+          cursor: pointer;
+          fill: #6C6B6B;
+          }
+
+        </style>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+        
+        var colorCount = 0, colorCompare=0, timeOutFunction;
+        $('#po-logo').mouseover(function() {
+            timeOutFunction = setInterval(function(){colorCounter()}, 1000);
+        });
+        var colorCounter = function() {
+            do {
+                colorCount = Math.floor(Math.random() * 5) + 1;
+            } while (colorCount == colorCompare);
+            colorChanger(colorCount);
+            colorCompare = colorCount;
+        };
+
+        $('#po-logo').mouseout( function() {
+        clearInterval(timeOutFunction);
+        // document.getElementById("Path1").setAttribute("fill", "#000000");
+        // document.getElementById("Path2").setAttribute("fill", "#6C6B6B");
+        // document.getElementById("CombinedShape").setAttribute("fill", "#B3B3B3");
+        });
+
+        var colorChanger = function(count) {
+
+            if (count==1)
+            {
+                document.getElementById("Path2").setAttribute("fill", "#357EDD");
+                document.getElementById("CombinedShape").setAttribute("fill", "#96CCFF");
+                document.getElementById("Path1").setAttribute("fill", "#00449E");
+                console.log(count);
+
+            }
+            else if (count==2)
+            {
+                document.getElementById("Path2").setAttribute("fill", "#19A974");
+                document.getElementById("CombinedShape").setAttribute("fill", "#9EEBCF");
+                document.getElementById("Path1").setAttribute("fill", "#137752");
+                console.log(count);
+            }
+            else if (count==3)
+            {
+                document.getElementById("Path2").setAttribute("fill", "#FF41B4");
+                document.getElementById("CombinedShape").setAttribute("fill", "#FFA3D7");
+                document.getElementById("Path1").setAttribute("fill", "#D5008F");
+                console.log(count);
+            }
+            else if (count==4)
+            {
+                document.getElementById("Path2").setAttribute("fill", "#FFDE37");
+                document.getElementById("CombinedShape").setAttribute("fill", "#FBF1A9");
+                document.getElementById("Path1").setAttribute("fill", "#FFB700");
+                console.log(count);
+            }
+            else if (count==5)
+            {
+                document.getElementById("Path2").setAttribute("fill", "#FF4136");
+                document.getElementById("CombinedShape").setAttribute("fill", "#FF725C");
+                document.getElementById("Path1").setAttribute("fill", "#E7040F");
+                console.log(count);
+            };
+        };
+
+        });
+        </script>
+        <g id="po-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0" x="0" y="0" width="36" height="36"></rect>
+                    <path id="Path2" fill="#6C6B6B" d="M10.8,32.3085938 L10.8,3.6 L13.9429688,3.6 C17.7210887,3.6 20.1117137,3.6 21.1148438,3.6 C23.8992327,3.6 26.0085853,3.85311551 27.6960937,5.7515625 C29.3836022,7.65000949 30.2273437,10.1671718 30.2273437,13.303125 C30.2273437,16.4953285 29.4011801,19.0300687 27.7488281,20.9074219 C26.0964761,22.784775 23.8851701,23.7234375 21.1148437,23.7234375 C19.5257733,23.7234375 18.1406309,23.3613317 16.959375,22.6371094 C15.7781191,21.912887 14.8148475,20.8336009 14.0695313,19.3992188 L14.0695313,32.3085938 L10.8,32.3085938 Z" transform="translate(20.513672, 17.954297) scale(1, -1) translate(-20.513672, -17.954297) "></path>
+
+                    <path id="Path1" fill="#000000" d="M3.6,32.3085938 L3.6,3.6 L6.74296875,3.6 C10.5210887,3.6 12.9117137,3.6 13.9148438,3.6 C16.6992327,3.6 18.8085853,3.85311551 20.4960937,5.7515625 C22.1836022,7.65000949 23.0273437,10.1671718 23.0273437,13.303125 C23.0273437,16.4953285 22.2011801,19.0300687 20.5488281,20.9074219 C18.8964761,22.784775 16.6851701,23.7234375 13.9148437,23.7234375 C12.3257733,23.7234375 10.9406309,23.3613317 9.759375,22.6371094 C8.57811909,21.912887 7.61484748,20.8336009 6.86953125,19.3992188 L6.86953125,32.3085938 L3.6,32.3085938 Z"></path>
+                    <path id="CombinedShape" fill="#B3B3B3" d="M13.9148438,3.6 C13.9666393,3.6 14.0182013,3.60008759 14.0695312,3.60027173 L14.0695312,16.509375 C14.8148475,15.0749928 15.7781191,13.9957067 16.959375,13.2714844 C18.1406309,12.547262 19.5257733,12.1851563 21.1148437,12.1851563 C21.7749628,12.1851563 22.4033416,12.2384519 22.999981,12.3450437 C23.0182229,12.657715 23.0273437,12.9770754 23.0273437,13.303125 C23.0273437,16.4953285 22.2011801,19.0300687 20.5488281,20.9074219 C18.8964761,22.784775 16.6851701,23.7234375 13.9148437,23.7234375 C12.7708827,23.7234375 11.7326066,23.5357776 10.8,23.1604536 L10.8,3.6 L13.9148438,3.6 Z"></path>
+        </g>
+    </svg>
+</body>
+</html>

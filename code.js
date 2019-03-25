@@ -17,6 +17,59 @@ $(document).ready(function(){
 
     });
 
+    $("#verizon-panel").mouseover(function() {
+
+        setTimeout(function(){
+            $("#hover-art-verizon").delay( 300 ).attr("src", "images/verizon-art-hover.svg");
+          }, 400);
+    });
+    $("#verizon-panel").mouseout(function() {
+
+        setTimeout(function(){
+            $("#hover-art-verizon").attr("src", "images/verizon-art.svg");
+          }, 400);
+    });
+
+    $("#bayesian-panel").mouseover(function() {
+
+        setTimeout(function(){
+            $("#hover-art-bayesian").delay( 300 ).attr("src", "images/bayesian-art-hover.svg");
+          }, 400);
+    });
+    $("#bayesian-panel").mouseout(function() {
+
+        setTimeout(function(){
+            $("#hover-art-bayesian").attr("src", "images/bayesian-art.svg");
+          }, 400);
+    });
+
+
+    $("#chatbot-panel").mouseover(function() {
+
+        setTimeout(function(){
+            $("#hover-art-chatbot").delay( 300 ).attr("src", "images/chatbot-art-hover.svg");
+          }, 400);
+    });
+    $("#chatbot-panel").mouseout(function() {
+
+        setTimeout(function(){
+            $("#hover-art-chatbot").attr("src", "images/chatbot-art.svg");
+          }, 400);
+    });
+
+    $("#twitch-panel").mouseover(function() {
+
+        setTimeout(function(){
+            $("#hover-art-twitch").delay( 300 ).attr("src", "images/twitch-art-hover.svg");
+          }, 400);
+    });
+$("#twitch-panel").mouseout(function() {
+
+        setTimeout(function(){
+            $("#hover-art-twitch").attr("src", "images/twitch-art.svg");
+          }, 400);
+    });
+
 
 
 

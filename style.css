@@ -4,15 +4,50 @@ html { font-family: 'Inter UI', sans-serif; }
   html { font-family: 'Inter UI var alt', sans-serif; }
 }
 
+@font-face {
+  font-family: 'CrimsonPro';
+  src: url('./fonts/CrimsonPro-Roman-VF.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CrimsonProItalic';
+  src: url('./fonts/CrimsonPro-Italic-VF.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPdots';
+  src: url('./fonts/BPdotsSquareVF.ttf');
+}
+
 body {
   background-color: #F9f9f9;
 }
+
+
 div.intro-text {
   padding-bottom: 1em;
  padding-left: 2em;
  padding-right: 1em;
 }
 
+::selection {
+  background: #FFD800; /* WebKit/Blink Browsers */
+  color: black;
+}
+
+p.image-label {
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(43, 45, 66, 0.55);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 div.background {
@@ -57,6 +92,44 @@ p.headline {
   padding: 3px 8px;
   border-radius: 2px;
 }
+
+p.page-subheading {
+  font-family: 'CrimsonPro', serif;
+  color: #30307E;
+  font-weight: 1000;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+
+p.page-body {
+  font-family: 'Inter UI', sans-serif;
+  color: rgba(43, 45, 66, 0.9);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 1em;
+  hyphens: auto;
+}
+
+p.project-heading {
+  font-family: 'CrimsonPro', serif;
+  color: #A6A6FF;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.2em;
+  transform: translate(0, -0.3em);
+  padding-bottom: 1em;
+}
+
+p.quote {
+  font-family: 'CrimsonPro', serif;
+  font-size: 1.5em;
+  margin: 1em;
+  color: #30307E;
+ }
 
 
 
@@ -104,11 +177,27 @@ p.headline {
   -webkit-text-fill-color: transparent;
 }
 
+p.page-overline {
+  color: #30307E;
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p.heading-paragraph {
+ color: rgba(166, 166, 255, 0.8);
+ font-family: 'Inter UI', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 1.5em;
+}
+
 a.topnav {
-  color: rgba(43, 45, 66, 0.6);
+  color:#80818C;
   font-weight: 500;
   font-size: 12px;
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 36px;
@@ -116,16 +205,20 @@ a.topnav {
   -webkit-transition: all 0.4s; /* Safari */
    transition: all 0.4s; 
    text-align: center;
+   border-bottom: 2px solid rgba(128, 129, 140, 0);
  
  
  }
  a.topnav:hover {
-   color: rgba(43, 45, 66, 1);
    font-weight: 600;
+   border-bottom: 2px solid #80818C;
+
  }
  
  a.topnav:active {
-   color: rgba(43, 45, 66, 0.8);
+   color: rgba(128, 129, 140, 0.8);
+   border-bottom: 2px solid rgba(128, 129, 140, 0.8);
+
  }
 
  a.bottomnav {
@@ -252,12 +345,10 @@ div.label {
 
 div.topbar {
   margin-bottom: 2em;
-}
-
-div.introduction {
-  font-family: 'Share Tech Mono', monospace;
-  text-align: center;
-
+  position: fixed;
+  top: 1em;
+  margin: auto;
+  z-index: 100000000;
 }
 
 div.bottombar {
@@ -265,8 +356,49 @@ div.bottombar {
 }
 
 #active {
-  color: rgba(43, 45, 66, 1);
+  color: rgba(128, 129, 140);
   font-weight: 600;
+   border-bottom: 2px solid rgba(128, 129, 140, 0);
+   cursor: default;
+ }
+
+ .top-container {
+  margin-top: 6em;
+}
+
+#project-logo-area {
+  padding-top:6em;
+}
+
+#project-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-top: 8em;
+  padding-bottom: 5em;
+}
+
+section#navigation-panel {
+  visibility: hidden;
+ }
+
+
+div.about-card1 {
+  background-color: #50AD7E;
+  padding: 0.5em 1em;
+}
+
+
+@media (min-width: 320px) {
+
+  section#navigation-panel {
+    position: fixed; 
+    top: 1.75em; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400000000;
+   }
+
  }
 
 @media (min-width: 576px) { 
@@ -304,15 +436,49 @@ div.bottombar {
     margin-bottom: 2em;
   }
 
+  .top-container {
+    margin-top: 7em;
+  }
+
  }
 
 
 @media (min-width: 768px) {
+
+
+
+  p.image-label {
+    font-size: 15px;
+  }
+
+  p.page-subheading {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  
+
+
+  p.page-body {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+
+
   .outer {
     width: 100%;
     min-height: 56px;
     margin-top: 12px;
     margin-bottom: 12px;
+  }
+
+  p.page-overline {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+  }
+  
+  p.heading-paragraph {
+    font-size: 16px;
   }
 
   .project-space:hover .label-group {
@@ -362,22 +528,40 @@ div.bottombar {
     transform: translate(0,6px);
   }
 
+  #project-logo-area {
+    padding-top:7em;
+  }
+
+  #project-logo {
+    padding-top: 7em;
+    padding-bottom: 4em;
+  }
+
 
   
   p.headline {
     font-size: 25px;
     line-height: 36px;
-    padding: 3px 6px;
+    padding: 3px 8px;
   }
 
   div.topbar {
     margin-bottom: 3em;
   }
 
+  .top-container {
+    margin-top: 8em;
+  }
+
 }
 
 
+
 @media (min-width: 992px) {
+
+  section#navigation-panel {
+    top: 2.5em; 
+   }
 
   a.topnav {
     font-size: 15px;
@@ -404,12 +588,26 @@ div.bottombar {
   }
 
   div.topbar {
-    margin-bottom: 4em;
+    margin: 5% auto;
+    left: 0;
+    right: 0;
+    margin-top: 0.7em;
   }
+
+  .top-container {
+    margin-top: 9em;
+  }
+
+  #project-logo-area {
+    padding-top:8em;
+  }
+
+
 }
 
-
 @media (min-width: 1200px) {
+
+
 
   .project-space {
     height: auto;
@@ -418,9 +616,19 @@ div.bottombar {
     margin-bottom: 30px;
   }
 
+  #project-logo {
+    padding-top: 9em;
+    padding-bottom: 3em;
+  }
+
+  .top-container {
+    margin-top: 12em;
+  }
+
 
   div.topbar {
   margin-bottom: 5em;
+  
 }
 }
 
@@ -460,3 +668,139 @@ li {
   -webkit-transform: scale(1.05, 1.05); /* Safari */
   transform: scale(1.05, 1.05);
 }
+
+#projectpagetoppanel {
+  background-color:#0D0D23; 
+  z-index:-1000; 
+  margin: 0px; 
+  padding:0px;
+}
+
+p.subtle {
+  color: rgba(166, 166, 255, 0.5);
+ }
+
+ div.image-composite-label {
+   margin: 0.7em 1em 4em 1em;
+ }
+
+ section.large-image-area {
+  margin: 0 auto;
+  max-width: 1600px;
+ }
+
+ div.videoWrapper {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+  background-color: rgba(43, 45, 66, 0.1);
+  
+ }
+
+ .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a.projectnavigation {
+ opacity: 0.6;
+ -ms-transition: all 0.4s;
+ -webkit-transition: all 0.4s; /* Safari */
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 0.5em;
+}
+
+a.projectnavigation:hover {
+  opacity: 1;
+ }
+
+ img.image-center {
+  display: block; margin-left: auto; margin-right: auto
+ }
+
+/*  p.first-paragraph::first-letter { 
+  font-size: 3.8em;
+  float: left;
+  margin-top: .15em;
+} */
+
+p.introduction {
+  padding-top: 1em;
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 800;
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 15px;
+}
+
+p.about-intro {
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 0.2em 0 0.2em;
+  color: rgba(43, 45, 66, 0.9)
+}
+
+div.grid-item {
+margin: 1em 0;
+border-radius: 0.3em;
+overflow: hidden;
+}
+
+div.grid-text {
+  background-image: linear-gradient(to bottom right, rgba(43, 45, 66, 0.18), rgba(43, 45, 66, 0.1), rgba(43, 45, 66, 0.12));
+  padding: 1.2em 1.4em 0 1.2em;
+  height: 100%;
+}
+
+p#foo {
+  white-space:nowrap;
+  overflow:hidden;
+  padding: 0;
+  line-height: 1.1em;
+  text-align: center;
+  margin-left: -100%;
+  margin-right: -100%;
+
+}
+.grid-emoji {
+  padding: 1em 0 0.1em 0;
+  background-image: linear-gradient(to bottom right, rgba(43, 45, 66, 0.18), rgba(43, 45, 66, 0.1), rgba(43, 45, 66, 0.12));
+}
+
+
+@media (min-width: 576px) {
+
+  div.grid-item {
+    margin: 0;
+    }
+
+    div.grid-text {
+      padding: 1em 1em 0 1em;
+    }
+    
+
+}
+
+@media (min-width: 768px) {
+
+
+  div.grid-text {
+    padding: 1em 1.3em 0 1em;
+  }
+
+  p.about-intro {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0.6em 0 0.6em;
+    color: rgba(43, 45, 66, 0.9)
+  }
+
+}
+
+

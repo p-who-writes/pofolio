@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>top-of-page</title>
+    <desc>Created with Sketch.</desc>
+    <g id="top-of-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#2B2D42" fill-rule="nonzero" cx="15" cy="15" r="15"></circle>
+        <g id="_ionicons_svg_md-arrow-round-up" transform="translate(6.000000, 6.000000)" fill="#FFFFFF">
+            <path d="M17.4916403,8.18102819 L10.2254858,0.500538774 C9.91098057,0.166846258 9.4826028,0 9.01084501,0 L8.98915499,0 C8.5173972,0 8.08901943,0.166846258 7.77451423,0.500538774 L0.508359693,8.18102819 C-0.169453231,8.84841322 -0.169453231,9.92179082 0.508359693,10.5836143 C1.18617262,11.2454378 2.2815183,11.2454378 2.95933122,10.5836143 L7.26479892,5.9675345 L7.26479892,17.8692342 C7.26479892,18.8091348 8.0402169,19.5710661 9,19.5710661 C9.97605061,19.5710661 10.7352011,18.8091348 10.7352011,17.8692342 L10.7352011,5.9675345 L15.0406688,10.5836143 C15.7184817,11.2454378 16.8138274,11.2454378 17.4916403,10.5836143 C18.1694532,9.92179082 18.1694532,8.84841322 17.4916403,8.18102819 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

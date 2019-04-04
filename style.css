@@ -359,6 +359,10 @@ div.bottombar {
   font-weight: 600;
    border-bottom: 2px solid rgba(128, 129, 140, 0);
    cursor: default;
+   text-decoration: line-through;
+   -ms-transition: all 0.2s; 
+   -webkit-transition: all 0.2s; /* Safari */
+   transition: all 0.2s; 
  }
 
  .top-container {

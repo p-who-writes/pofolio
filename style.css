@@ -95,7 +95,7 @@ p.headline {
 
 p.page-subheading {
   font-family: 'CrimsonPro', serif;
-  color: #30307E;
+  color: #000000;
   font-weight: 1000;
   font-size: 24px;
   line-height: 28px;
@@ -116,7 +116,6 @@ p.page-body {
 
 p.project-heading {
   font-family: 'CrimsonPro', serif;
-  color: #A6A6FF;
   font-size: 2.5em;
   font-weight: 600;
   line-height: 1.2em;
@@ -178,7 +177,8 @@ p.quote {
 }
 
 p.page-overline {
-  color: #30307E;
+  opacity: 0.35;
+  color: rgba(255, 255, 255, 0.4);
   font-family: 'Inter UI', sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -187,7 +187,6 @@ p.page-overline {
 }
 
 p.heading-paragraph {
- color: rgba(166, 166, 255, 0.8);
  font-family: 'Inter UI', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -670,14 +669,14 @@ li {
 }
 
 #projectpagetoppanel {
-  background-color:#0D0D23; 
+  background-color: rgba(0, 0, 0, 1); 
   z-index:-1000; 
   margin: 0px; 
   padding:0px;
 }
 
 p.subtle {
-  color: rgba(166, 166, 255, 0.5);
+  opacity: 0.8;
  }
 
  div.image-composite-label {
@@ -803,4 +802,18 @@ p#foo {
 
 }
 
+#verizon-intro {
+  color: rgba(236, 147, 147, 0.6);
+}
 
+#bayesian-intro {
+  color: rgba(148, 180, 238, 0.6);
+}
+
+#chatbot-intro {
+  color: rgba(191, 236, 203, 0.5);
+}
+
+#twitch-intro {
+  color: rgba(180, 161, 240, 0.6);
+}

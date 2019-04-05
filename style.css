@@ -177,8 +177,8 @@ p.quote {
 }
 
 p.page-overline {
-  opacity: 0.35;
-  color: rgba(255, 255, 255, 0.4);
+  opacity: 0.6;
+  color: black;
   font-family: 'Inter UI', sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -807,17 +807,33 @@ p#foo {
 }
 
 #verizon-intro {
-  color: rgba(236, 147, 147, 0.6);
+  color: rgba(255, 61, 61, 0.9);
+}
+
+#verizon-overline {
+  color: #FF8F8F;
 }
 
 #bayesian-intro {
-  color: rgba(148, 180, 238, 0.6);
+  color: rgba(61, 119, 255, 0.9);
+}
+
+#bayesian-overline {
+  color: #8FB0FF;
 }
 
 #chatbot-intro {
-  color: rgba(191, 236, 203, 0.5);
+  color: rgba(96, 210, 157, 0.9);
+}
+
+#chatbot-overline {
+  color: #7ABF9F;
 }
 
 #twitch-intro {
-  color: rgba(180, 161, 240, 0.6);
+  color: rgba(106, 61, 255, 0.9);
+}
+
+#twitch-overline {
+  color: #9681DB;
 }

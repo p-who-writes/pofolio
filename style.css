@@ -23,6 +23,11 @@ div.intro-text {
   color: black;
 }
 
+p#project-number {
+  font-family: 'Inter UI', sans-serif;
+  color: rgba(150, 150, 150);
+}
+
 p.image-label {
   font-family: 'Inter UI', sans-serif;
   font-weight: 500;
@@ -121,6 +126,17 @@ p.project-heading {
   line-height: 1.2em;
   transform: translate(0, -0.3em);
   padding-bottom: 1em;
+}
+
+p.twentyprojects-smaller {
+  font-size: 1.8em;
+  
+}
+
+p.twentyprojects-large {
+  line-height: 1.2em;
+  transform: translate(0, 0);
+  padding-bottom: 0.2em;
 }
 
 p.quote {
@@ -658,7 +674,6 @@ li {
   -ms-transition: transform 0.2s; 
   -webkit-transition: transform 0.2s; /* Safari */
   transition: transform 0.2s; 
-
 }
 
 #po-logo:hover {
@@ -672,6 +687,11 @@ li {
   -webkit-transform: scale(1.05, 1.05); /* Safari */
   transform: scale(1.05, 1.05);
 }
+
+#po-logo-new {
+  height: 40px;
+}
+
 
 #projectpagetoppanel {
   background-color: rgba(0, 0, 0, 1); 
@@ -901,3 +921,4 @@ textarea {
   box-sizing: border-box;
   resize: none;
 }
+

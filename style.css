@@ -97,6 +97,29 @@ p.headline {
   border-radius: 2px;
 }
 
+p.name-intro {
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(43, 45, 66, 1);
+    text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  padding: 3px 8px;
+  margin: 6em 1em 3em 1em;
+
+}
+
+p.name-follow-up {
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(43, 45, 66, 1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  padding: 3px 8px;
+  margin: 3em;
+}
+
 p.page-subheading {
 
   font-family: 'Crimson Text', 'CrimsonPro', serif;
@@ -436,6 +459,10 @@ div.about-card1 {
   }
 
 
+
+  
+
+
   .outer {
     width: 100%;
   }
@@ -564,6 +591,10 @@ div.about-card1 {
     line-height: 36px;
     padding: 3px 8px;
   }
+
+
+
+
 
   div.topbar {
     margin-bottom: 3em;
@@ -932,3 +963,57 @@ textarea {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+a.work-title {
+  font-size: 2em;
+  line-height: 1.4em;
+  margin-right: 0.1em;
+  transition: 0.4s;
+}
+
+
+a.type1 {
+  font-family: 'Yeseva One', cursive;
+}
+
+
+a.type2 {
+  
+font-family: 'Black Ops One', cursive;
+}
+
+
+a.type3 {
+
+font-family: 'Limelight', cursive;
+
+}
+
+
+a.type4 {
+font-family: 'Unlock', cursive;
+}
+
+a.type5 {
+  font-family: 'Audiowide', cursive;
+  }
+
+  a.type6 {
+    font-family: 'Poller One', cursive;
+    }
+  
+    span.number-project {
+      font-family: 'Share Tech Mono', monospace;
+      color: rgba(43, 45, 66, 0.9)
+    }
+
+
+    a#side-bar {
+      font-family: 'Share Tech Mono', monospace; 
+      font-weight: 600; 
+      letter-spacing: 0.1em;
+    }
+
+
+div.in-brief {
+  margin: 2em 0em;
+}

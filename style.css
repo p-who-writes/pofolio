@@ -99,19 +99,26 @@ p.headline {
 
 p.name-intro {
   font-family: 'Share Tech Mono', monospace;
-  color: rgba(43, 45, 66, 1);
-    text-align: center;
+  background: -webkit-linear-gradient(#000000, #999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 22px;
+  line-height: 36px;
   padding: 3px 8px;
-  margin: 6em 1em 2em 1em;
+  margin: 6em 0em 2em 0em;
+}
 
+span.name-title {
+  font-size: 33px;
 }
 
 p.name-follow-up {
   font-family: 'Share Tech Mono', monospace;
-  color: rgba(43, 45, 66, 1);
+  background: -webkit-linear-gradient(#000000, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   font-weight: 600;
   font-size: 20px;

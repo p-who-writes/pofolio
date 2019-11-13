@@ -160,6 +160,7 @@ p.project-heading {
 
 p.twentyprojects-smaller {
   font-size: 1.8em;
+  letter-spacing: normal;
   
 }
 
@@ -167,6 +168,7 @@ p.twentyprojects-large {
   line-height: 1.2em;
   transform: translate(0, 0);
   padding-bottom: 0.2em;
+  letter-spacing: normal;
 }
 
 p.quote {

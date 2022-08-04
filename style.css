@@ -98,10 +98,8 @@ p.headline {
 }
 
 p.name-intro {
-  font-family: 'Share Tech Mono', monospace;
-  background: -webkit-linear-gradient(#000000, #999);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family:'Share Tech Mono', monospace;
+
   text-align: center;
   font-weight: 600;
   font-size: 22px;
@@ -111,7 +109,11 @@ p.name-intro {
 }
 
 span.name-title {
+  font-family: 'Share Tech Mono', monospace;
   font-size: 33px;
+  background: -webkit-linear-gradient(#000000, #999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p.name-follow-up {
@@ -807,12 +809,12 @@ p.about-intro {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.5em;
-  padding: 0.2em 0 0.2em;
+  padding: 0.1em 0 0;
   color: rgba(43, 45, 66, 0.9)
 }
 
 div.grid-item {
-margin: 1em 0;
+margin: 0.5em 0;
 border-radius: 0.3em;
 overflow: hidden;
 }
@@ -860,9 +862,9 @@ p#foo {
   }
 
   p.about-intro {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0.6em 0 0.6em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding: 0.1em 0 0.1em;
     color: rgba(43, 45, 66, 0.9)
   }
 

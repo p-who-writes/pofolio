@@ -254,9 +254,7 @@ a.topnav {
   -ms-transition: all 0.4s;
   -webkit-transition: all 0.4s; /* Safari */
    transition: all 0.4s; 
-   text-align: center;
-   border-bottom: 2px solid rgba(128, 129, 140, 0);
- 
+   text-align: center; 
  
  }
  a.topnav:hover {

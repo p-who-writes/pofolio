@@ -87,11 +87,11 @@ p.client-name {
 }
 
 p.headline {
-  font-family: 'Inter', monospace;
-  color: white;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 500;
+color: white;
   float: left;
   background-color: rgba(43, 45, 66, 1);
-  font-weight: 600;
   font-size: 21px;
   line-height: 33px;
   padding: 3px 8px;
@@ -100,9 +100,8 @@ p.headline {
 
 p.name-intro {
   font-family:'Inter', monospace;
-
   text-align: center;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 22px;
   line-height: 36px;
   padding: 3px 8px;

@@ -87,7 +87,7 @@ p.client-name {
 }
 
 p.headline {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Inter', monospace;
   color: white;
   float: left;
   background-color: rgba(43, 45, 66, 1);
@@ -99,7 +99,7 @@ p.headline {
 }
 
 p.name-intro {
-  font-family:'Share Tech Mono', monospace;
+  font-family:'Inter', monospace;
 
   text-align: center;
   font-weight: 600;

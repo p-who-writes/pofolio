@@ -860,6 +860,7 @@ p#foo {
   }
 
   p.about-intro {
+     font-family: 'Inter', sans-serif;
     font-size: 1.4em;
     line-height: 1.5em;
     padding: 0.1em 0 0.1em;

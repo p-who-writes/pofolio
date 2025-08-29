@@ -247,7 +247,7 @@ p.heading-paragraph {
 a.topnav {
   color:#80818C;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 36px;
@@ -549,7 +549,7 @@ div.about-card1 {
   }
 
   a.topnav {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   div.bottombar {
@@ -625,7 +625,7 @@ div.about-card1 {
    }
 
   a.topnav {
-    font-size: 15px;
+    font-size: 18px;
   }
 
 
